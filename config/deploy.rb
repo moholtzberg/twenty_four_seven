@@ -3,7 +3,7 @@ set :use_sudo, false
 set :application, "copiersflorida"
 set :repo_url, 'git@github.com:moholtzberg/twenty_four_seven.git'
 set :branch, "master"
-set :deploy_to, "/home/spree/twenty_four_seven"
+set :deploy_to, "/home/rails/twenty_four_seven"
 
 set :log_level, :debug
 # set :rvm1_ruby_version, "ruby-2.1.5-p273"
@@ -16,7 +16,7 @@ set :default_shell, '/bin/bash'
 set :shell, '/bin/bash'
 # default_environment["RAILS_ENV"] = 'production'
 # set :linked_files, %w{config/database.yml config/newrelic.yml app/views/spree/shared/_lucky_orange.html.erb public/google98548de7465bed0f.html}
-set :linked_files, %w{config/database.yml config/newrelic.yml app/views/spree/shared/_lucky_orange.html.erb}
+set :linked_files, %w{config/application.rb config/database.yml config/newrelic.yml app/views/spree/shared/_lucky_orange.html.erb}
 set :linked_dirs, %W{public/spree}
 
 task :init do

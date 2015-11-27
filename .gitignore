@@ -13,5 +13,17 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-!/log/.keep
+!/log/.keeitp
 /tmp
+/log/*.log
+public/sitemap*
+public/sitemap*
+public/assets*
+public/spree*
+config/database.yml
+config/deploy.rb
+config/deploy/*
+config/deploy
+config/newrelic.yml
+Capfile
+_lucky_orange*
