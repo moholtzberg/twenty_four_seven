@@ -1,0 +1,140 @@
+<div class="no-padding-left col-md-3">
+	<%= render :partial => "spree/shared/toner_finder" %>
+</div>
+
+<div id="carousel-example-generic" class="carousel slide col-md-9 no-margin-left no-margin-right no-padding-left no-padding-right" data-ride="carousel">
+	
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
+	
+	<div class="carousel-inner" role="listbox">
+		
+		<div class="item active">
+			<%= image_tag("banner_123_toner-min.png") %>
+			<!--
+			<div class="carousel-caption">
+				<h3></h3>
+			</div>
+			-->
+		</div>
+		
+		<div class="item">
+			<%= image_tag("banner_free_shipping-min.png") %>
+			<!--
+			<div class="carousel-caption">
+				<h3></h3>
+			</div>
+			-->
+		</div>
+		
+		<div class="item">
+			<%= image_tag("banner_20_20_guarantee-min.png") %>
+			<!--
+			<div class="carousel-caption">
+				<h3></h3>
+			</div>
+			-->
+		</div>
+		
+		<div class="item">
+			<%= image_tag("banner_one_stop_shop-min.png") %>
+			<!--
+			<div class="carousel-caption">
+				<h3></h3>
+			</div>
+			-->
+		</div>
+	</div>
+	
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+
+</div>
+
+<div class="col-md-12 home-text">
+	<h1 class="text-center">Copiers, Printers, Scanners, Shredders, Ink & Toner</h1>
+</div>
+
+<div class="col-md-12 logos">
+	<!-- 
+	<%= link_to("/t/brand/canon", :class => "logo col-sm-4 col-md-3 text-center") do %>
+		<%= image_tag("canon_logo.jpg", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%= link_to("/t/brand/brother", :class => "logo col-sm-4 col-md-3 text-center") do %>
+		<%= image_tag("brother_logo.jpg", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	
+	<%= link_to("/t/brand/ricoh", :class => "logo col-sm-4 col-md-3 text-center") do %>
+		<%= image_tag("ricoh_logo.jpg", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%= link_to("/t/brand/epson", :class => "logo col-sm-4 col-md-3 text-center") do %>
+		<%= image_tag("epson_logo.jpg", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%# link_to("/t/brand/epson", :class => "logo col-sm-4 col-md-3") do %>
+		<%# image_tag("epson_logo", :height => "35px", :class => "logo") %>
+	<%# end %>
+	
+	<%= link_to("/t/brand/oki", :class => "logo col-sm-4 col-md-2 text-center") do %>
+		<%= image_tag("oki_logo.png", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%= link_to("/t/brand/samsung", :class => "logo col-sm-4 col-md-3 text-center") do %>
+		<%= image_tag("samsung_logo.png", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%= link_to("/t/brand/kyocera-mita", :class => "logo col-sm-4 col-md-3 text-center") do %>
+		<%= image_tag("kyocera-mita_logo.jpg", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%= link_to("/t/brand/xerox", :class => "logo col-sm-4 col-md-2 text-center") do %>
+		<%= image_tag("xerox_logo.png", :height => "35px", :class => "logo") %>
+	<% end %>
+	
+	<%= link_to("/t/brand/hp", :class => "logo col-sm-4 col-md-2 text-center") do %>
+		<%= image_tag("hp_logo.jpeg", :height => "35px", :class => "logo") %>
+	<% end %>
+	-->
+	<%= image_tag("canon_logo.jpg", :height => "35px", :class => "logo") %>
+	<%= image_tag("hp_logo.jpg", :height => "35px", :class => "logo") %>
+	<%= image_tag("ricoh_logo.jpg", :height => "35px", :class => "logo") %>
+	<%= image_tag("brother_logo.jpg", :height => "35px", :class => "logo") %>
+	
+	<%# image_tag("oki_logo", :height => "35px", :class => "logo") %>
+	<%# image_tag("epson_logo", :height => "35px", :class => "logo") %>
+	<%= image_tag("kyocera-mita_logo.jpg", :height => "35px", :class => "logo") %>
+	<%= image_tag("samsung_logo.png", :height => "35px", :class => "logo") %>
+	<%= image_tag("xerox_logo.png", :height => "35px", :class => "logo") %>
+	
+	
+	<%# ["Brother", "Canon", "Copystar", "Epson"].each do |brand| %>
+		<%# found_brand = Spree::Taxon.find_by(:name => brand, :parent_id => 2) %>
+		<%# unless found_brand.nil?%>
+			<%# link_to(seo_url(found_brand), :class => "logo col-sm-4 col-md-3") do %>
+				<%# image_tag(found_brand.icon(:normal), :class => "logo") %>
+			<%# end %>
+		<%# end %>	
+	<%# end %>
+	
+	<%# ["HP", "Konica Minolta", "3M"].each do |brand| %>
+		<%# found_brand = Spree::Taxon.find_by(:name => brand) %>
+		<%# unless found_brand.nil?%>
+			<%# link_to(seo_url(found_brand), :class => "logo col-sm-4 col-md-4") do %>
+				<%# image_tag(found_brand.icon(:normal), :class => "logo #{cycle('pull-right', '','pull-left')}") %>
+			<%# end %>
+		<%# end %>
+	<%# end %>
+</div>
