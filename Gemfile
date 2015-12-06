@@ -107,7 +107,8 @@ gem 'spree_product_documents',      github: 'moholtzberg/spree_product_documents
 gem 'spree_error_pages',            github: 'moholtzberg/spree_error_pages',                branch: master
 # gem 'spree_messages',                github: 'moholtzberg/spree_messages',                   branch: master
 gem 'spree_credit_lines',           github: 'moholtzberg/spree_credit_lines',               branch: master
-gem 'import_products',        github: 'fonemstr/spree-import-products',               branch: master
+gem 'import_products',              github: 'moholtzberg/spree-import-products',            branch: master
+# gem 'import_products',               path: '../spree-import-products'
 # gem 'spree_po_number',               path: '../spree_po_number'
 # gem 'spree_user_prices',             path: '../spree_user_prices'
 # gem 'spree_messages',                path: '../spree_messages'

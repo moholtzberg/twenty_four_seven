@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/fonemstr/spree-import-products.git
-  revision: 996c02ff2ca68db29b669712cd5eb86f8d5aece8
+  remote: git://github.com/moholtzberg/spree-import-products.git
+  revision: de7ba1c3dbbdb2752b464833677ca3acc81fbcd0
   branch: master
   specs:
     import_products (1.0.1)
