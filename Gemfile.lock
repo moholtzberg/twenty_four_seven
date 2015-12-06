@@ -24,6 +24,14 @@ GIT
       spree_core (~> 3.0.0)
 
 GIT
+  remote: git://github.com/moholtzberg/spree_messages.git
+  revision: 6e26e880598d89b414e21c909571de90e12d1dde
+  branch: master
+  specs:
+    spree_messages (3.0.0)
+      spree_core (~> 3.0.0)
+
+GIT
   remote: git://github.com/moholtzberg/spree_msrp.git
   revision: e66fa3bd80d59dee12c1b171a0cabb46944fc278
   branch: 3-0-stable
@@ -570,6 +578,7 @@ DEPENDENCIES
   spree_digital!
   spree_error_pages!
   spree_gateway!
+  spree_messages!
   spree_msrp!
   spree_print_invoice!
   spree_product_documents!

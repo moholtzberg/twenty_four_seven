@@ -105,7 +105,7 @@ gem 'spree_shipstation',            github: 'moholtzberg/spree_shipstation',    
 gem 'spree_msrp',                   github: 'moholtzberg/spree_msrp',                       branch: spree_version
 gem 'spree_product_documents',      github: 'moholtzberg/spree_product_documents',          branch: master
 gem 'spree_error_pages',            github: 'moholtzberg/spree_error_pages',                branch: master
-# gem 'spree_messages',                github: 'moholtzberg/spree_messages',                   branch: master
+gem 'spree_messages',                github: 'moholtzberg/spree_messages',                   branch: master
 gem 'spree_credit_lines',           github: 'moholtzberg/spree_credit_lines',               branch: master
 gem 'import_products',              github: 'moholtzberg/spree-import-products',            branch: master
 # gem 'import_products',               path: '../spree-import-products'
