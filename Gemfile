@@ -115,4 +115,4 @@ gem 'import_products',              github: 'moholtzberg/spree-import-products',
 # gem 'spree_credit_lines',            path: '../spree_credit_lines'
 # gem 'spree_copiersflorida_theme',    path: '../spree_copiersflorida_theme'
 # gem 'spree_filter_by_taxon',         path: '../spree_filter_by_taxon'
-# gem 'spree_copiersflorida_theme',   github: 'moholtzberg/spree_copiersflorida_theme',       branch: master
+gem 'spree_copiersflorida_theme',   github: 'moholtzberg/spree_copiersflorida_theme',       branch: master

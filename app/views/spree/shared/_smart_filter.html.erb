@@ -4,10 +4,12 @@
 
 <% taxons_to_skip = ["Supplies"] %>
 <% css_class = "sub" %>
+<% if Spree::Taxon.find_by(:name => "Product Type") && Spree::Taxon.find_by(:name => "Product Type").children %>
 <% Spree::Taxon.find_by(:name => "Product Type").children.each do |filter| %>
 
 	<%= render :partial => "spree/shared/smart_filter_sub", locals: { filter: filter, taxons_to_skip: taxons_to_skip, css_class: css_class} %>
 
+<% end %>
 <% end %>
 
 </ul>

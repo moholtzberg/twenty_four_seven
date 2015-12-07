@@ -1,0 +1,45 @@
+<div id="nav_bar" class="row hidden-xs hidden-sm">
+			
+	<div class="header-top-left">
+		<ul class="list-inline">
+			
+			<% Spree::Page.by_store(current_store).visible.sidebar_links.each do |page| %>
+				<% if page.foreign_link.present? %>
+					<li><%= link_to page.title, page.foreign_link, target: '_blank', ref: 'nofollow' %></li>
+				<% else %>
+					<% page_uri = Rails.application.routes.named_routes[:spree].path.spec.to_s == '/' ? page.slug : Rails.application.routes.named_routes[:spree].path.spec.to_s + page.slug %>
+					<li class="<%= 'current' if (request.fullpath.gsub('//','/') == page_uri) %>"><%= link_to page.title, page_uri, ref: 'nofollow' %></li>
+				<% end %>
+			<% end %>
+			
+		</ul>
+		
+		<!-- <ul class="list-inline">
+			<li class="phone"><i class="fa fa-phone"></i> (800) 436-2877</li>
+		</ul> -->
+	</div>
+	
+	<div class="header-top-right">
+		<ul class="list-inline">
+			<% if spree_current_user %>
+			<li><%= link_to Spree.t(:my_account), "/account" %></li>
+			<li><%= link_to Spree.t(:logout), spree_logout_path %></li>
+			<% else %>
+			<li><%= link_to Spree.t(:login), spree_login_path %> or <%= link_to Spree.t(:create_a_new_account), spree_signup_path %></li>
+			<% end %>
+		</ul>
+	</div>
+		
+</div>
+
+<div id="nav_bar_mobile" class="row hidden-md hidden-lg hidden-xl">
+	
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<ul class="list-inline text-center phone">
+				<li class="phone"><a class="text-center"><i class="fa fa-phone"></i> (855) 436-2877</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+</div>
