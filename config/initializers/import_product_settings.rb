@@ -13,10 +13,12 @@ Spree::ProductImport.settings = {
     :image_3 => 10,
     :image_4 => 11,
     :description => 12,
-    :category => 13
+    :product_type => 13,
+    :brand => 14,
+    :make => 15
   },
   :create_missing_taxonomies => true,
-  :taxonomy_fields => [:category, :brand], #Fields that should automatically be parsed for taxons to associate
+  :taxonomy_fields => [:product_type, :brand, :make], #Fields that should automatically be parsed for taxons to associate
   :image_fields => [:image_main, :image_2, :image_3, :image_4], #Image fields that should be parsed for image locations
   :product_image_path => "#{Rails.root}/lib/etc/product_data/product-images/", #The location of images on disk
   :rows_to_skip => 1, #If your CSV file will have headers, this field changes how many rows the reader will skip

@@ -33,6 +33,7 @@
                 <span class="price selling lead" itemprop="price"><%= display_price(product) %></span>
 				<% else %>
 				<span class="price selling lead" itemprop="price">Please login to view price</span>
+				<div class="alert alert-danger" role="alert">You must be logged in to view prices and place orders!</div>
 				<% end %>
               </span>
             </div>
