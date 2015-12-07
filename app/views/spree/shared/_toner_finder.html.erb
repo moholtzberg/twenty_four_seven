@@ -7,7 +7,7 @@
 		<br/>
 		<select id="finder-make" class="form-control">
 			<option>1 | Select Your Printer Brand</option>
-			<% Spree::Taxon.find_by(:permalink => "makes").children.each do |make| %>
+			<% Spree::Taxon.find_by(:permalink => "make").children.each do |make| %>
 				<option value="<%= make.id %>"><%= make.name %></option>
 			<% end %>
 		</select>
@@ -17,7 +17,7 @@
 				var make = $("select#finder-make").val();
 
 				var request = $.ajax({
-					url : '/api/taxonomies/<%= Spree::Taxon.find_by(:permalink => "makes").taxonomy_id %>/taxons/'+ make,
+					url : '/api/taxonomies/<%= Spree::Taxon.find_by(:permalink => "make").taxonomy_id %>/taxons/'+ make,
 					// data: {token: '<%# spree_current_user.spree_api_key %>'},
 					dataType : "json"
 				});
@@ -56,7 +56,7 @@
 				var make = $("select#finder-family").val();
 
 				var request = $.ajax({
-					url : '/api/taxonomies/<%= Spree::Taxon.find_by(:permalink => "makes").taxonomy_id %>/taxons/'+ make,
+					url : '/api/taxonomies/<%= Spree::Taxon.find_by(:permalink => "make").taxonomy_id %>/taxons/'+ make,
 					// data: {token: '<%# spree_current_user.spree_api_key %>'},
 					dataType : "json"
 				});
@@ -96,7 +96,7 @@
 				var make = $("select#finder-model").val();
 
 				var request = $.ajax({
-					url : '/api/taxonomies/<%= Spree::Taxon.find_by(:permalink => "makes").taxonomy_id %>/taxons/'+ make,
+					url : '/api/taxonomies/<%= Spree::Taxon.find_by(:permalink => "make").taxonomy_id %>/taxons/'+ make,
 					// data: {token: '<%# spree_current_user.spree_api_key %>'},
 					dataType : "json"
 				});
