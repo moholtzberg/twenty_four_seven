@@ -41,13 +41,13 @@ Spree.config do |config|
   # config.override_actionmailer_config = true
   # config.mails_from = "no-reply@copiersflorida.com"
   
-  if Rails.env.production?
-    config.shipstation_username = "#{SECRET["SHIPSTATION"]["USER"]}"
-    config.shipstation_password = "#{SECRET["SHIPSTATION"]["PASS"]}"
-  else
+  # if Rails.env.production?
     # config.shipstation_username = "#{SECRET["SHIPSTATION"]["USER"]}"
     # config.shipstation_password = "#{SECRET["SHIPSTATION"]["PASS"]}"
-  end
+  # else
+    # config.shipstation_username = "#{SECRET["SHIPSTATION"]["USER"]}"
+    # config.shipstation_password = "#{SECRET["SHIPSTATION"]["PASS"]}"
+  # end
 
   config.shipstation_weight_units = "Ounces" # Grams, Ounces or Pounds
 
