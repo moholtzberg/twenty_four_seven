@@ -1,0 +1,37 @@
+<% content_for :sidebar do %>
+	<div data-hook="taxon_sidebar_navigation">
+	<%# render partial: 'spree/shared/taxonomies', :locals => {:@taxonomies => Spree::Taxon.all}  %>
+	<%# render partial: 'spree/shared/filters' %>
+	<%# render :partial => 'spree/shared/smart_filter' %>
+	</div>
+<% end %>
+
+<div id="breadcrumbs" class="hidden-xs col-sm-12 col-md-12 no-padding-left no-padding-right">
+	<div class="breadcrumb">
+		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+			<a itemprop="url" href="/"><span itemprop="title">Home</span></a>
+		</li>
+		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+			<a itemprop="url" href="<%= @page.slug unless @page.nil? %>"><span itemprop="title"><%= @page.title unless @page.nil? %></span></a>
+		</li>
+	</div>
+</div>
+
+<div class="col-md-10 no-padding-left no-padding-right">
+	
+</div>
+
+<div class="col-md-12 no-padding-left no-padding-right">
+	
+	<div class="outer">
+		
+	<% taxons = Spree::Taxon.find_by(:name => @page.title) %>	
+	
+	<% products = taxons.children.includes(:products).map(&:products).flatten.compact.uniq %>
+	
+	<%= render :partial => 'spree/shared/products', :locals => { :products => products, :taxon => taxons } %>
+		
+	
+	</div>
+	
+</div>

@@ -8,3 +8,12 @@
  *= require_self
  *= require_tree .
 */
+.row.products .product .panel img {
+    /* max-width: 150px; */
+		height: auto;
+    max-height: 110px !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

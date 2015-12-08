@@ -45,7 +45,7 @@
 					<%= truncate(product.description, :length => 100).to_html %>
 					
 					<% if spree_current_user %>
-	                <span class="price selling" itemprop="price"><%= render :partial => "spree/products/mini_cart_form" , :locals => {:product => product }%></span>
+	                <span class="price selling pull-right" itemprop="price"><%= render :partial => "spree/products/mini_cart_form" , :locals => {:product => product }%></span>
 					<% else %>
 					<div class="alert alert-danger" role="alert">You must be logged in to view prices and place orders!</div>
 					<% end %>
