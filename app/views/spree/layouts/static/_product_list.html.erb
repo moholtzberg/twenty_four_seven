@@ -2,7 +2,8 @@
 	<div data-hook="taxon_sidebar_navigation">
 	<%# render partial: 'spree/shared/taxonomies', :locals => {:@taxonomies => Spree::Taxon.all}  %>
 	<%# render partial: 'spree/shared/filters' %>
-	<%# render :partial => 'spree/shared/smart_filter' %>
+	<%= render :partial => 'spree/shared/smart_filter' %>
+	<%= render :partial => 'spree/shared/sidebar_pages_footer' %>
 	</div>
 <% end %>
 
