@@ -1,0 +1,20 @@
+<% if Spree::Page.by_store(current_store).visible.sidebar_links.any? %>
+<div class="pages panel panel-default no-margin-left no-margin-right" role="tablist" aria-multiselectable="false">
+	
+	<div class="panel-heading">Useful Links</div>
+	
+	<ul class="list-group">
+	
+	<% Spree::Page.by_store(current_store).visible.footer_links.each do |page| %>
+	
+		<% if page.foreign_link.present? %>
+			<li class="list-group-item"><%= link_to page.title, page.foreign_link, target: '_blank', ref: 'nofollow' %></li>
+		<% else %>
+			<% page_uri = Rails.application.routes.named_routes[:spree].path.spec.to_s == '/' ? page.slug : Rails.application.routes.named_routes[:spree].path.spec.to_s + page.slug %>
+			<li class="list-group-item <%= 'current' if (request.fullpath.gsub('//','/') == page_uri) %>"><%= link_to page.title, page_uri, ref: 'nofollow' %></li>
+		<% end %>
+		
+	<% end %>
+	</ul>
+</div>
+<% end %>
